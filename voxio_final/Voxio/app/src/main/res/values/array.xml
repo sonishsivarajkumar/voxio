@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="loading_images">
+        <item>@drawable/pic1</item>
+        <item>@drawable/pic2</item>
+        <item>@drawable/pic3</item>
+        <item>@drawable/pic4</item>
+        <item>@drawable/pic5</item>
+        <item>@drawable/pic6</item>
+        <item>@drawable/pic7</item>
+        <item>@drawable/pic8</item>
+        <item>@drawable/pic9</item>
+        <item>@drawable/pic10</item>
+        <item>@drawable/pic11</item>
+        <item>@drawable/pic12</item>
+        <item>@drawable/pic13</item>
+        <item>@drawable/pic14</item>
+        <item>@drawable/pic15</item>
+        <item>@drawable/pic16</item>
+        <item>@drawable/pic17</item>
+        <item>@drawable/pic18</item>
+        <item>@drawable/pic19</item>
+        <item>@drawable/pic20</item>
+        <item>@drawable/pic21</item>
+        <item>@drawable/pic22</item>
+        <item>@drawable/pic23</item>
+        <item>@drawable/pic24</item>
+        <item>@drawable/pic25</item>
+        <item>@drawable/pic26</item>
+        <item>@drawable/npic1</item>
+        <item>@drawable/npic2</item>
+        <item>@drawable/npic3</item>
+        <item>@drawable/npic4</item>
+        <item>@drawable/npic5</item>
+        <item>@drawable/npic6</item>
+        <item>@drawable/npic7</item>
+        <item>@drawable/npic8</item>
+        <item>@drawable/npic9</item>
+        <item>@drawable/npic10</item>
+    </array>
+
+</resources>

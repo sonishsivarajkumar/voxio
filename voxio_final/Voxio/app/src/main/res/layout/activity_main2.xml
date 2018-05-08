@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pooppai.joycy.myproject.Main2Activity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#c1cbf0">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="WORDS"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="20px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/voxio"
+            android:id="@+id/imageView2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tabHost"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/Learning"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="ABCD"
+                            android:id="@+id/button"
+                            android:layout_marginLeft="0px"
+                            android:layout_marginTop="75px"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/alpha"
+                            android:onClick="openAlpha"/>
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="1234"
+                            android:id="@+id/button2"
+                            android:layout_marginLeft="-100px"
+                            android:layout_marginTop="25px"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/num"
+                            android:onClick="openNum" />
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="WORDS"
+                            android:id="@+id/button3"
+                            android:layout_marginLeft="100px"
+                            android:layout_marginTop="-150px"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/word"
+                            android:onClick="openWord" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Translator"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:text="Recorder"
+                            android:id="@+id/button4"
+                            android:layout_marginLeft="0px"
+                            android:layout_marginTop="100px"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/mic"
+                            android:onClick="openRecorder"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="60dp">
+
+                            <ImageButton
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:text="Text"
+                                android:id="@+id/button5"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/textpad"
+                                android:onClick="openText"/>
+
+                            <EditText
+                                android:layout_width="250dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="5dp"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:background="#ffffff"
+                                android:id="@+id/editText"
+                                android:editable="true"
+                                android:visibility="invisible" />
+
+                            <ImageButton
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:text="Text"
+                                android:id="@+id/button7"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@drawable/yes"
+                                android:visibility="invisible"
+                                android:onClick="openYes"/>
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/listView2" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Puzzler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="HIGH SCORE"
+                            android:id="@+id/textView3"
+                            android:layout_marginLeft="0px"
+                            android:layout_marginTop="75px"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="17"
+                            android:id="@+id/textView4"
+                            android:layout_marginLeft="0px"
+                            android:layout_marginTop="0px"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#763636"
+                            android:textSize="50dp" />
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:text="START"
+                            android:id="@+id/button6"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/start"
+                            android:onClick="openPuzzle"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+</LinearLayout>
